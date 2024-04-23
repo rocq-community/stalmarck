@@ -239,7 +239,7 @@ let convertConcl sigma cl =
 (* Convert the hashtable into a function array *)
 let buildEnv hash =
   let acc = ref (mkApp ((Lazy.force coq_rArrayInitP)
-                ,[| mkLambda (Context.make_annot Names.Anonymous Sorts.Relevant, (Lazy.force coq_rNat),
+                ,[| mkLambda (Context.make_annot Names.Anonymous ERelevance.relevant, (Lazy.force coq_rNat),
                    (Lazy.force coq_True)) |])) in
   ConstrMap.iter  (fun c n ->
               acc := (mkApp ((Lazy.force coq_rArraySetP)
