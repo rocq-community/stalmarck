@@ -18,7 +18,7 @@ jobs:
           - 'coqorg/coq:dev'
       fail-fast: false
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: coq-community/docker-coq-action@v1
         with:
           custom_image: ${{ matrix.image }}
@@ -42,7 +42,17 @@ jobs:
               opam install -y -v -j 2 coq-stalmarck-tactic
               opam list
             endGroup
+            startGroup "Build stalmarck-checker dependencies"
+              opam pin add -n -y -k path coq-stalmarck-checker .
+              opam update -y
+              opam install -y -j 2 coq-stalmarck-checker --deps-only
+            endGroup
+            startGroup "Build stalmarck-checker"
+              opam install -y -v -j 2 coq-stalmarck-checker
+              opam list
+            endGroup
             startGroup "Uninstallation test"
+              opam remove -y coq-stalmarck-checker
               opam remove -y coq-stalmarck-tactic
               opam remove -y coq-stalmarck
             endGroup

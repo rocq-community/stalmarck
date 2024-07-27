@@ -27,4 +27,4 @@
  (public_name stalmarck)
  (libraries coq-stalmarck-tactic.stal unix)
  (modules lexer parser main)
- (package coq-stalmarck-tactic))
+ (package coq-stalmarck-checker))
