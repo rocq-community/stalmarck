@@ -25,7 +25,7 @@ From Stalmarck Require Export normalize.
 From Stalmarck Require Export algoTrace.
 From Stalmarck Require Export refl.
 
-Declare ML Module "stal:coq-stalmarck-tactic.stal".
-Declare ML Module "staltac_plugin:coq-stalmarck-tactic.plugin".
+Declare ML Module "coq-stalmarck-tactic.stal".
+Declare ML Module "coq-stalmarck-tactic.plugin".
 
 Ltac staltac := intros; repeat pop_prop; stalt.
