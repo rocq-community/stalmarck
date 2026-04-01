@@ -22,11 +22,11 @@ we took a special care so that every function can be evaluated
 inside Coq, see OrderedListEq_ex
 *)
 
-From Coq Require Import Arith.
-From Coq Require Export List.
-From Coq Require Import Lexicographic_Exponentiation.
-From Coq Require Export Relation_Definitions.
-From Coq Require Export Relation_Operators.
+From Stdlib Require Import Arith.
+From Stdlib Require Export List.
+From Stdlib Require Import Lexicographic_Exponentiation.
+From Stdlib Require Export Relation_Definitions.
+From Stdlib Require Export Relation_Operators.
 From Stalmarck Require Export sTactic.
 
 Section OrderedList.

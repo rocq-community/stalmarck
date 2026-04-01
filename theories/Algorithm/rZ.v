@@ -31,12 +31,12 @@ At the end we define functional arrays that will be used in implementation
 *)
 
 From Stalmarck Require Import sTactic.
-From Coq Require Import Relation_Definitions.
-From Coq Require Import ZArith.
-From Coq Require Import Inverse_Image.
-From Coq Require Import Inclusion.
-From Coq Require Import Wf_nat.
-From Coq Require Import List.
+From Stdlib Require Import Relation_Definitions.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Inverse_Image.
+From Stdlib Require Import Inclusion.
+From Stdlib Require Import Wf_nat.
+From Stdlib Require Import List.
 
 Definition rNat := positive.
 

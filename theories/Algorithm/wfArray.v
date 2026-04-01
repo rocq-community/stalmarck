@@ -22,10 +22,10 @@ Define a notion of wellformedness of function arrays for our application
 
 From Stalmarck Require Export rZ.
 From Stalmarck Require Export OrderedListEq.
-From Coq Require Export Relation_Definitions.
+From Stdlib Require Export Relation_Definitions.
 From Stalmarck Require Export LetP.
 From Stalmarck Require Export PolyListAux.
-From Coq Require Export List.
+From Stdlib Require Export List.
 From Stalmarck Require Export sTactic.
 
 (** Definition of well formed array and some properties *)

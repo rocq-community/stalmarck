@@ -23,7 +23,7 @@ Implement the intersection (2 files)
 From Stalmarck Require Import rZ.
 From Stalmarck Require Import OrderedListEq.
 From Stalmarck Require Import LetP.
-From Coq Require Import Relation_Definitions.
+From Stdlib Require Import Relation_Definitions.
 From Stalmarck Require Import state.
 From Stalmarck Require Import restrictState.
 From Stalmarck Require Import ltState.

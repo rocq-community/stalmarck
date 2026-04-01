@@ -31,7 +31,7 @@ let global_reference_in_absolute_module dir id =
   Nametab.global_of_path (Libnames.make_path dir id)
 
 let constant dir s =
-  let dir = DirPath.make (List.map Id.of_string (List.rev ("Coq"::dir))) in
+  let dir = DirPath.make (List.map Id.of_string (List.rev ("Corelib"::dir))) in
   let id = Id.of_string s in
   try
     EConstr.of_constr (UnivGen.constr_of_monomorphic_global (Global.env ()) (global_reference_in_absolute_module dir id))

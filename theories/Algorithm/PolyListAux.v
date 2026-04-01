@@ -20,8 +20,8 @@ Pierre Letouzey & Laurent Thery
 Definition of rem a function that removes elt from polymorphic lists
 *)
 
-From Coq Require Import Arith.
-From Coq Require Import List.
+From Stdlib Require Import Arith.
+From Stdlib Require Import List.
 
 Section Auxrem.
 Variable A : Type.

@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 Some examples of computing with stalmarck inside Coq
 *)
 
-From Coq Require Import ZArith.
+From Stdlib Require Import ZArith.
 From Stalmarck Require Export algoStalmarck.
 From Stalmarck Require Export algoTrace.
 From Stalmarck Require Export makeTriplet.

@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 Given a state, equality is decidable
 *)
 
-From Coq Require Import List.
+From Stdlib Require Import List.
 From Stalmarck Require Export state.
 
 (** To show that the equality is decidable we need a more `constructive' predicate

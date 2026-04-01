@@ -21,7 +21,7 @@ How to use OrderedList
 *)
 
 From Stalmarck Require Import OrderedListEq.
-From Coq Require Import Arith. (* For Nat *)
+From Stdlib Require Import Arith. (* For Nat *)
 
 Definition CNat : forall a b : nat, {a < b} + {b < a} + {a = b}.
 fix CNat 1; intros a; case a; [ idtac | intros a' ]; intros b; case b;
@@ -58,7 +58,7 @@ Eval compute in (appnat l1 l2).
 Eval compute in (getminnat l1 l2).
 Eval compute in (internat l1 l2).
 
-From Coq Require Import ZArith. (* For Z *)
+From Stdlib Require Import ZArith. (* For Z *)
 
 Definition CZ : forall a b : Z, {(a < b)%Z} + {(b < a)%Z} + {a = b}.
 intros a b; CaseEq (a - b)%Z.

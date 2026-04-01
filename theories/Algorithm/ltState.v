@@ -22,11 +22,11 @@ of valid equations where variables belong to a given list
 *)
 
 From Stalmarck Require Import state.
-From Coq Require Import Arith.
+From Stdlib Require Import Arith.
 From Stalmarck Require Import stateDec.
-From Coq Require Import Inverse_Image.
-From Coq Require Import Compare.
-From Coq Require Import Relation_Definitions.
+From Stdlib Require Import Inverse_Image.
+From Stdlib Require Import Compare.
+From Stdlib Require Import Relation_Definitions.
 
 Section lt.
 Variable L : list rNat.

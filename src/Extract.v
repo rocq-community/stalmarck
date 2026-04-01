@@ -14,7 +14,7 @@
 (* 02110-1301 USA                                                     *)
 
 From Stalmarck Require Import algoRun.
-From Coq Require Import ZArith.
-From Coq Require Import Extraction.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Extraction.
 
 Extraction "stal.ml" run checkTracef zero Pos.of_succ_nat.

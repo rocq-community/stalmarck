@@ -21,7 +21,7 @@ Examples for the stalmarck tactic
 *)
 
 From Stalmarck Require Import StalTac.
-From Coq Require Import Classical.
+From Stdlib Require Import Classical.
 
 Theorem Praeclarum :
  forall x y z t : Prop, (x -> z) /\ (y -> t) -> x /\ y -> z /\ t.

@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 A wrapper for the stalmarck tactic
 *)
 
-From Coq Require Export ZArith.
+From Stdlib Require Export ZArith.
 From Stalmarck Require Export normalize.
 From Stalmarck Require Export algoTrace.
 From Stalmarck Require Export refl.
