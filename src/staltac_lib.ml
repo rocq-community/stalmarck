@@ -191,7 +191,7 @@ let isDependent sigma t = dependent sigma (mkRel 1) t
       a hash function containing the interpretation of the variable
 *)
 
-module ConstrMap = Map.Make(Constr)
+module ConstrMap = Map.Make(Termops.ConstrData)
 
 let convertConcl sigma cl =
   let varhash  = ref ConstrMap.empty in
