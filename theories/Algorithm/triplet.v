@@ -20,9 +20,9 @@ Pierre Letouzey & Laurent Thery
 Definition of triplets
 *)
 
-From Coq Require Export Bool.
+From Stdlib Require Export Bool.
 From Stalmarck Require Export rZ.
-From Coq Require Export List.
+From Stdlib Require Export List.
 From Stalmarck Require Export normalize.
 From Stalmarck Require Export sTactic.
 

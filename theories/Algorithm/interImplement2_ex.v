@@ -21,7 +21,7 @@ How to use our module on ordered list
 *)
 
 From Stalmarck Require Import interImplement2.
-From Coq Require Import ZArith.
+From Stdlib Require Import ZArith.
 
 #[local] Definition A := rArrayInit _ (fun n : rNat => class nil).
 

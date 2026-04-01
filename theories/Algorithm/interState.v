@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 Definition of the intersection of two states
 *)
 
-From Coq Require Import List.
+From Stdlib Require Import List.
 From Stalmarck Require Export stateDec.
 
 (** The property of being an intersection *)

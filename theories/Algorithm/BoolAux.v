@@ -21,7 +21,7 @@ Some standard properties of booleans.
 
 *)
 
-From Coq Require Export Bool.
+From Stdlib Require Export Bool.
 
 Lemma de_morgan1 : forall b1 b2 : bool, negb (b1 || b2) = negb b1 && negb b2.
 Proof.

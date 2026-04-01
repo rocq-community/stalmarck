@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 Definition of the union of two states
 *)
 
-From Coq Require Import List.
+From Stdlib Require Import List.
 From Stalmarck Require Export state.
 
 (** The property of being an union *)

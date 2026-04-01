@@ -20,7 +20,7 @@ Pierre Letouzey & Laurent Thery
 Definition of states as the list of equations, i.e., pairs of rZ
 *)
 
-From Coq Require Import List.
+From Stdlib Require Import List.
 From Stalmarck Require Export triplet.
 
 Definition State := list (rZ * rZ).

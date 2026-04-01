@@ -20,9 +20,9 @@ Pierre Letouzey & Laurent Thery
 Construct a function of type [Expr -> Prop]
 *)
 
-From Coq Require Import ZArith.
+From Stdlib Require Import ZArith.
 From Stalmarck Require Import normalize.
-From Coq Require Import Classical.
+From Stdlib Require Import Classical.
 From Stalmarck Require Import sTactic.
 
 Section refl.

@@ -174,7 +174,7 @@ rewrite (Hab1 f Abs Hf2); rewrite (rZEvalCompInv b f).
 case (rZEval f b); auto with bool stalmarck.
 Qed.
 
-From Coq Require Import Arith.
+From Stdlib Require Import Arith.
 
 Fixpoint nthTail (n : nat) : list rZ -> list rZ :=
   fun l : list rZ =>
