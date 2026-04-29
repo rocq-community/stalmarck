@@ -3,7 +3,7 @@
  (public_name coq-stalmarck-tactic.plugin)
  (flags :standard -w -3-27-32)
  (modules :standard \ stal lexer parser main)
- (libraries coq-core.plugins.ltac stal))
+ (libraries rocq-runtime.plugins.ltac stal))
 
 (coq.pp (modules staltac))
 
